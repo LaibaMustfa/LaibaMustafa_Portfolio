@@ -1,0 +1,2265 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+<!--=============== icon css link===============-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--=============== font css link ===============-->
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+
+ 
+<!--=============== Include Poppine Font Family ===============-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+ 
+
+<!--=============== Include Bootstrap CSS===============-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--=============== FOR navbar ===============-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<!--=============== REMIXICONS ===============-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+<!--=============== SWIPER CSS ===============-->
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JavaScript Bundle (includes Popper) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+ 
+
+<style>
+
+  .container-fluid
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .row
+  {
+   margin-left: 0px;
+   margin-right: 0px;
+  }
+
+  .col.col-12.col-sm-12.col-md-12.col-lg-12
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+
+  .navbar 
+  {
+      /*background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);*/
+
+      /* background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #533483);  
+      /*  background: linear-gradient(135deg, #1A0033, #2B004A, #3B0060, #4A0073, #5A0087); */
+      background-color: #160033;
+        color: #FFFFFF;
+  }
+  .navbar
+  {
+     padding: 0px;
+  }
+  .Navbar_container
+  {
+     padding: 10px !important;
+     margin: 0px;
+  }
+  .humburg-button
+  {
+    margin-left: 10px;
+    border-color: white!important;
+  }
+  .humburg-button:hover
+  {
+    border-color: #F96229!important;
+    color: #F96229 ;
+  }
+  .fas-bars-style
+  {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF !important;
+    font-size: 30px;
+  }
+  .navbar_logo
+  {
+    color: #FFFFFF !important;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar_logo:hover
+  {
+    color: #FFFFFF !important;
+  }
+  .navbar_collapse_style
+  {
+    justify-content: right;
+    padding: 5px;
+  }
+  .navbar_font
+  {
+    color: #FFFFFF !important;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+  }
+  .navbar_font:hover
+  {
+    color: #FFFFFF !important ;
+  } 
+  .navbar_Login
+  {
+    color: #FFFFFF;;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 20px;
+  }
+  .navbar_Login:hover
+  {
+    color: #FFFFFF;;
+  }
+   
+ 
+ .countainer-hero
+ {
+     /*background: linear-gradient(135deg, rgba(10, 30, 50, 0.95), rgba(15, 15, 30, 0.95));
+     /*backdrop-filter: blur(10px);*/
+     /* background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #533483);  
+       backdrop-filter: blur(10px);*/
+    /*background: linear-gradient(135deg, #1A0033, #2B004A, #3B0060, #4A0073, #5A0087); 
+        backdrop-filter: blur(10px);
+      /*background: url('pexels-rahulp9800-1933900.jpg') no-repeat center center;
+      background-size: cover;
+      backdrop-filter: blur(10px);
+      /*background: rgba(0, 0, 0, 1);*/
+  background: linear-gradient(
+    90deg,
+    #10002B,  /* Dark Purple */
+    #240046,  /* Very Deep Purple */
+    #3C096C,  /* Dark Violet */
+    #5A189A,  /* Rich Purple */
+    #7B2CBF,  /* Medium Purple */
+    #9D4EDD,  /* Bright Purple */
+    #C77DFF,  /* Light Lavender */
+    #E0AAFF   /* Pale Lavender */
+);
+
+
+     backdrop-filter: blur(10px);
+
+
+
+     animation: gradientAnimation 15s ease infinite;
+ }
+   /* Animation for gradient */
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    /* Grid Overlay */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 50px 50px;
+        pointer-events: none;
+    }
+  .row_HeroCol_one_padding
+  {
+     padding-left: 60px;
+     padding-right: 40px;
+     padding-top: 0px;
+  }
+  .row_ColHero_dot_svg
+  {
+     width: 150px !important;
+  }
+  .heroCol_one_h2
+  {
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 67px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -50px;
+    margin-left: 25px;
+  }
+ .wave-emoji 
+ {
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+    display: inline-block;
+    transform-origin: 70% 70%;
+  }
+  @keyframes wave 
+  {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  .font_color
+  {
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 54px;
+  }
+  .font_line3
+  {
+    font-size: 38px;
+    line-height: 29px;
+  }
+  .row_hero_section
+  {
+    margin-top: 0px;
+    margin-left: 10px;
+    padding-top: 90px;
+  }
+  @keyframes float 
+  {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  .hero_icon_row
+  {
+    padding-left: 90px;
+    font-size: 40px;
+  }
+  .header-icon-style
+  {
+      color: #FFD700; 
+   
+  }
+  .header-icon-style:hover
+  {
+     
+    color: #EC4899;
+  }
+  img.linkedin-logo {
+    transition: transform 0.3s ease;
+    width: 60px;
+}
+
+img.linkedin-logo:hover {
+    transform: scale(1.1);
+}
+
+
+
+  
+ 
+
+  .row_HeroCol_floating-image
+  {
+    animation: float 3s ease-in-out infinite;
+  }
+  .row_HeroCol_floating-image_style
+  {
+     width : 500px !important; 
+     height: auto;
+  }
+  /*.row_getstarted_button
+  {
+     
+    background: linear-gradient(152.63deg, #EE2115 -19.36%, #FF8324 67.38%);
+    color: white;
+    border: 1px solid #F96229;
+    font-family: Avenir;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 25px;  
+    margin-top: 0px;
+    display: inline-block;
+  }
+  .row_getstarted_button:hover
+  {
+    background: #0F84B8;
+    color: white;
+    border: 1px solid #0F84B8;
+  }*/
+
+
+  .row_comingsoon
+  {
+    padding: 70px;
+    margin-top: 80px;
+  }
+  .h2_comingsoon
+  {
+    font-family: Avenir;
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 800;
+    color:#243141;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+  }
+  .row_comingsoon_font
+  {
+    font-family: Avenir;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color:#8a94a6;
+    height: 60px;
+    width: 80%;
+  }
+  .row_comingsoon_button
+  {
+    background: linear-gradient(152.63deg, #EE2115 -19.36%, #FF8324 67.38%);
+    color: white;
+    border: 1px solid #F96229;
+    font-family: Avenir;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 25px;  
+    margin-top: 0px;
+    display: inline-block;
+  }
+  .row_comingsoon_button:hover
+  {
+    background: #0F85BA;
+    color: white;
+    border: 1px solid #0F85BA;
+  }
+  .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) 
+  {
+    margin-left: -1px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .input-group
+  {
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .row_serives_h3
+  {
+    font-family: FranklinGothicLTPro-DmCm, sans-serif;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 800;
+    color: #000;
+    padding: 0px;
+    padding-top: 90px;
+  }
+
+/* .container-card
+{
+  margin-bottom: 0px;
+}
+.row_cards 
+{
+  padding: 40px;
+  margin-top: 60px;
+  height: 320px;
+  margin-bottom: 40px;
+}
+.row_card
+{
+  background-color: #F9F8F7;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.row_card_img
+{
+  max-width: 300px ;
+  padding: 20px;
+}
+.row_card_h2
+{
+  font-size: 26px;
+  line-height: 32px;
+  color: #3a3a3a;
+  font-weight: 800;
+}
+.row_card_p
+{
+  font-size: 13px;
+  line-height: 22px;
+  color: #8a94a6;
+  font-weight: 400;
+}
+.row_card_font
+{
+  padding: 50px 0px 30px 0px;
+  margin-left: -60px;
+}
+.row_card_buynow_btn
+{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #f56000;
+  font-family: Avenir;
+  text-decoration: none;
+}
+#bottom 
+{
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  padding-right: 0px;       
+}*/
+
+.container-card {
+  padding: 60px;
+}
+
+.row_cards {
+  min-height: 300px; 
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+
+}
+
+.row_card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 29px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /*transition: box-shadow 0.3s ease;
+   border: 1px solid #FFFFFF;*/
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(152, 63, 229, 0.2);
+  border: 2px solid transparent;
+  border-radius: 8px;  Optional rounded corners 
+}
+
+.row_card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(124, 58, 237, 0.4);
+  border: 1px solid transparent; /* Makes space for the gradient border */
+  border-image: linear-gradient(to right, #ff7ab3, #7c3aed); /* Start and end colors */
+  border-image-slice: 1; /* Ensures the gradient is applied to the full border */
+}
+
+.serivce_col_padding
+{
+  padding: 0px 20px 10px 20px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    border: none;   
+  background: none;   
+}
+
+.card-icon {
+  width: 80px;
+  height: auto;
+   border: none;   
+  background: none;   
+}
+
+.row_card_h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.row_card_p {
+  color: #555;
+  font-size: 1em;
+}
+
+.tags {
+  margin: 15px 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #555;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.row_card_buynow_btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.row_card_buynow_btn:hover 
+{
+  background-color: #0056b3;
+}
+
+
+.portfolio-section 
+{
+  text-align: center;
+  padding: 2rem;
+  background: #22073E; 
+  backdrop-filter: blur(10px);
+  padding-bottom: 50px;
+}
+.portfolio-section:hover
+{
+    /*background: linear-gradient(135deg, rgba(26, 0, 51, 0.9), rgba(43, 0, 74, 0.9), rgba(59, 0, 96, 0.9), rgba(74, 0, 115, 0.9), rgba(90, 0, 135, 0.9));*/
+
+}
+
+.heading
+ {
+   font-family: FranklinGothicLTPro-DmCm, sans-serif;
+    font-size: 48px;
+    line-height: 42px;
+    font-weight: 800;
+    color: #FFF;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    position: relative;
+}
+ 
+.categories 
+{
+  margin-bottom: 4rem;
+}
+.category
+ {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: #f3f3f3;
+  border: 1px solid #FFFFFF ;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: FranklinGothicLTPro-DmCm, sans-serif;
+}
+.category.active {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #FFF;
+}
+.category:hover
+{
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Light glow */
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: none; /* Initially hidden; shown by JavaScript */
+}
+
+.project img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, .623) !important;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding-top: 13px;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Nunito, sans-serif !important;
+}
+.overlay a:hover
+{
+   color: #ff6f61 !important;
+}
+.project_left {
+    display: flex;
+    flex: 2 1;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+.project_right {
+   align-items: center;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+.protfoliosection_project_h2
+{
+  color: #FFFFFF;
+  font-family: Nunito, sans-serif !important;
+  font-size: 19px;
+  font-weight: 700;
+}
+.protfoliosection_project_h3
+{
+  color: #FFFFFF;
+  font-family: Nunito, sans-serif !important;
+  font-size: 16px;
+  font-weight: 400 ;
+}
+ 
+.certifications
+{
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: #F1D6FF;
+}
+.certifications h2
+{
+  
+  font-family: FranklinGothicLTPro-DmCm, sans-serif !important;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 800;
+  color: #720ED9;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  position: relative;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start position for animation */
+  animation: slideUp 1s ease-out forwards; /* Apply slide-up animation */
+}
+/* Keyframes for the sliding animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cert-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.cert-card 
+{
+  position: relative;
+  width: 315px;
+  border: 1px solid #d9dbdf !important;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 5px #d9dbdf;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit;
+}
+.cert-card:hover
+{
+  border: 1px solid #lightgoldenrodyellow !important;
+}
+.cert-card:hover
+{
+  transform: scale(1.05);
+}
+.cert-card img
+{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.cert-overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.cert-card:hover .cert-overlay
+{
+  opacity: 1;
+}
+.cert-info 
+{
+  padding: 10px;
+  background-color: #ffffff;
+}
+.cert-title 
+{
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(0, 28, 85);
+}
+.cert-subtitle 
+{
+  font-size: 18px;
+  color: rgb(127, 141, 170);
+  font-weight: 700;
+  margin: 5px 0 0;
+}
+ 
+ 
+/* Skills section */
+.skills-slider 
+{
+  text-align: center;
+  background-color: #22073E;
+  padding: 70px 55px 70px 55px;
+}
+.skills-title
+{
+  color: #FFF;
+  font-size: 24px;
+  margin-bottom: 20px;
+ 
+}
+
+/* Slider container styling */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 35px;
+    padding-bottom: 90px;
+    padding-top: 30px;
+    scroll-behavior: smooth;
+}
+
+/* Individual slide styling */
+.slide {
+  flex: 0 0 auto;
+    width: 145px;
+    height: 145px;
+    background-color: #11152C;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(152, 63, 229, 0.2);
+  border: 2px solid transparent;
+  border-radius: 8px;  Optional rounded corners;
+}
+.slide img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.slide p {
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 400;
+}
+.slide:hover {
+   /*transform: scale(1.1); 
+    border-color: 2px solid #101527; */
+
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(124, 58, 237, 0.4);
+  border: 1px solid transparent;  
+  border-image: linear-gradient(to right, #ff7ab3, #7c3aed);  
+  border-image-slice: 1;   
+}
+/* Hide scrollbar */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.slider {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ 
+/* Blog  */
+.blog-section {
+    width: 100%;
+  
+     background-color: #F1D6FF;
+    padding: 20px 20px 130px 20px;
+    text-align: center;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #b3b3d1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.blog-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background-color: #2a2a3b;
+    border-radius: 8px;
+    width: 370px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-date {
+    color: #5ed0a5;
+    font-size: 14px;
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.blog-time {
+    color: #5ed0a5;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.blog-description {
+    font-size: 14px;
+    color: #d0d0d0;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.blog-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #5ed0a5;
+}
+
+
+.row_button
+  {
+    background: linear-gradient(152.63deg, #EE2115 -19.36%, #FF8324 67.38%);
+    color: white;
+    border: 1px solid #F75A29;
+    font-family: Avenir;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 35px;  
+    margin-top: 0px;
+    display: inline-block;
+  }
+  .row_button:hover
+  {
+    background: #0F85BA;
+    color: white;
+    border: 1px solid #0F85BA;
+  }
+
+
+  .row_footer
+  {
+     
+    background-color: #0A96D4;
+  }
+  .footer_image
+  {
+    width:auto;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .scroll_footer
+  {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    color: white;
+    padding:30px 30px 0px 30px ;
+  }
+  .go_to_btn
+  {
+    background:  #0A96D4;
+    border-color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-align: left;
+    align-content: flex-end;
+  }
+  .go_to_btn:hover
+  {
+    background:  #F65629;
+    border-color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 50px;
+  }
+  .footer_play_btn
+  {
+    width: 115px;
+  }
+  .footer_card
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 30px 30px 30px;
+  }
+  .footer_card_padding
+  {
+    padding: 30px 50px 50px 50px;
+  }
+  .footer_card_h3
+  {
+    font-size: 23px;
+    line-height: 21px;
+    font-weight: 800;
+    color: white;
+    font-family: Avenir;
+  }
+  .footer_card_p
+  {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: white;
+    font-family: Avenir;
+  }
+  .footer_icon
+  {
+    color: #F9601F;
+  }
+  .hr_footer_style
+  {
+    border-color: white;
+  }
+  .footer_last_p
+  {
+    color: white;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500;
+  }
+  .footer_card_icon
+  {
+    background-color: orange;
+    width: 30px;
+  }
+  .footer_last_img
+  {
+     width: 158px;
+     float: right;
+  }
+  .footer_icons_display
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
+  .footer_icons
+  {
+    padding: 5px 10px;
+    color: ;
+    background: linear-gradient(152.63deg, #EE2115 -19.36%, #FF8324 67.38%);
+    margin: 5px;
+    border-radius: 50px;
+  }
+ .footer {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-heading {
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #aaaaaa;
+    margin-bottom: 24px;
+}
+
+.footer-text .highlight {
+    color: #5ed0a5; /* Accent color for highlight */
+    font-weight: bold;
+}
+
+.footer-buttons {
+    margin-bottom: 24px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #ffffff;
+    background-color: #333444;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button.linkedin { background-color: #0a66c2; } /* LinkedIn color */
+.button.email { background-color: #5ed0a5; } /* Custom accent color for Email */
+.button.resume { background-color: #333444; }
+
+.button:hover {
+    background-color: #222233;
+}
+
+.footer-credits {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 40px;
+}
+
+.footer-credits .highlight {
+    color: #5ed0a5; /* Accent color for highlight */
+}
+.text-success
+{
+  color: #8C2AF1 !important;
+}
+.display-5
+{
+  color: #00FFCC !important;
+}
+.footer-btn-style
+{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(152, 63, 229, 0.2); 
+  border: 2px solid #F1D6FF;
+  border-radius: 0px;  Optional rounded corners;
+  color: #F1D6FF;
+}
+.footer-btn-style:hover
+{
+   transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(124, 58, 237, 0.4);
+  border: 2px solid transparent;  
+  border-image: linear-gradient(to right, #ff7ab3, #7c3aed);  
+  color: #000;
+  border-image-slice: 1;
+}
+.scroll-button 
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #720ED9;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(152, 63, 229, 0.2); 
+  border: 2px solid #F1D6FF;
+}
+/* SVG icon styling */
+.scroll-button svg 
+{
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(124, 58, 237, 0.4);
+  border: 2px solid transparent;  
+  border-image: linear-gradient(to right, #ff7ab3, #7c3aed);
+}
+
+ 
+  
+
+ 
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 425px)
+{
+.navbar_font
+{
+  font-size: 12px ;
+}
+.navbar_logo
+{
+  width:100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 12px;
+}
+.row_mobile-order
+{
+  display: flex;
+  flex-direction: column;
+}
+.row_HeroCol_one_padding
+{
+  text-align: center;
+  padding: 0px;
+}
+.hero_icon_row
+{
+  font-size: 20px;
+}
+.heroCol_one_h2
+{
+  font-size: 24px;
+  line-height: 29px;
+}
+.row_HeroCol_floating-image_style
+{
+  width: 280px !important;
+  height: auto;
+}
+.row_ColHero_dot_svg
+{
+  width: 90px;
+}
+ .font_color
+  {
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .font_line3
+  {
+    font-size: 22px;
+    line-height: 29 px;
+  }
+  img.linkedin-logo
+  {
+    transition: transform 0.3s ease;
+    width: 40px;
+  }
+  /*.row_getstarted_button
+  { 
+    font-family: Avenir;
+    font-size: 16px;
+    line-height: 24px; 
+    padding: 10px 25px;  
+    margin-top: 0px;
+  }
+  /* Hero Image animation 
+  @keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  }*/
+  .container-card
+  {
+    padding: 10px;
+  }
+   
+  .row_cards 
+  {
+     display: flex;
+     flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 0px;
+    width: 310px;
+    max-width: 1200px;
+  }
+  .row_card
+  {
+    margin-bottom: 20px;
+  }
+  .row_button
+  {
+    background-color: #F75A29;
+    color: white;
+    border: 1px solid #F75A29;
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 20px 30px!important;  
+    margin-top: 0px;
+    display: inline-block;
+  }
+  .row_button:hover
+  {
+    background-color: #0F84B8;
+    color: white;
+    border: 1px solid #0F84B8;
+  }
+  .portfolio-section
+  {
+    padding: 10px;
+  }
+.list {
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 85%;
+     display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.category
+{
+  padding: 5px !important;
+  margin:  10px;
+
+}
+.protfoliosection_project_h2
+{
+  font-size: 12px !important;
+}
+   
+.protfoliosection_project_h3
+{
+  font-size: 12px !important;
+}
+.cert-card
+{
+  width: 280px;
+}
+   
+ 
+
+
+  .footer_card
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 30px 30px;
+  }
+  .footer_image
+  {
+    width: 300px;
+    height: 1000px;
+  }
+  .footer_play_btn
+  {
+    display: none;
+  }
+  .footer_last_row
+  {
+    display: none;
+  }
+  .footer_card_padding 
+  {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+  }
+  .row_mobile_footer
+  {
+    text-align: center;
+  }
+  .footer_play_btn_mob
+  {
+    width: 90px;
+  }
+  .footer_last_img_mob
+  {
+     width: 158px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+  }
+   
+  .input-group
+  {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .row_comingsoon_div_btn
+  {   
+    display: none;  
+
+  }
+  .row_comingsoon_div_btn_mobile
+  {
+    margin-top: 20px;
+  }
+  .row_comingsoon_font
+  {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+ 
+
+
+    
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+
+.navbar_logo
+{
+  font-size: 20px;
+  line-height: 30px;
+}
+.navbar_font
+{
+  font-size: 14px;
+}
+.countainer-hero
+{
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.row_HeroCol_one_padding
+{
+  padding-left:10px;
+  padding-right: 0px;
+}
+.heroCol_one_h2
+{
+  font-size: 24px !important;
+  line-height: 31px;
+}
+.row_HeroCol_floating-image_style
+{
+  width: 300px !important;
+  height: auto;
+}
+
+.row_hero_section 
+{
+    margin-top: 0px;
+    margin-left: 10px;
+    padding-top: 30px; 
+}
+.font_color
+{
+  font-size: 28px;
+}
+.font_line3
+{
+  font-size: 30px;
+}
+.hero_icon_row
+{
+  font-size: 34px;
+  padding-left: 35px!important;
+}
+ 
+ 
+
+
+   
+   
+
+
+ 
+
+
+  .footer_card_padding
+  {
+    padding: 30px 10px 10px 10px;
+  }
+  .footer_card
+  {
+    padding: 0px 10px 10px 10px;
+  }
+  .row_mobile_footer
+  {
+    display: none;
+  }
+  .footer_card_h3
+  {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .footer_card_p
+  {
+    font-size: 15px;
+    line-height: 24px; 
+  }
+  .footer_image
+  {
+    height: 400px;
+  }
+  .input-group
+  {
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .row_comingsoon_div_btn_mobile
+  {
+    display: none;
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+
+
+  .cart_mobile
+  {
+    display: none;
+  }
+  .nav-item-mobile
+  {
+    display: none;
+  }
+  .row_getstarted_image
+  {
+    width:450px;
+  }
+
+.row_HeroCol_floating-image_style
+{
+  width: 300px !important;
+  height: auto;
+}
+.row_ColHero_dot_svg {
+    width: 100px !important;
+}
+.row_HeroCol_one_padding {
+    padding-left: 0px;
+    padding-right: 40px;
+    padding-top: 0px;
+}
+.heroCol_one_h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -50px;
+    margin-left: 25px;
+}
+.font_color {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 34px;
+}
+.font_line3 {
+    font-size: 34px;
+    line-height: 29px;
+}
+img.linkedin-logo {
+    transition: transform 0.3s ease;
+    width: 47px;
+}
+.hero_icon_row {
+    padding-left: 23px;
+    padding-bottom: 60px;
+}
+
+  .row_card_img 
+  {
+    max-width: 270px;
+  }
+  .row_card_h2
+  {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .row_card_p
+  {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .row_card_buynow_btn
+  {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .row_cards 
+  {
+     padding: 0px;
+  }
+
+  
+
+
+  .row_wepromise_h1
+  {
+    font-size: 34px;
+    line-height: 36px;
+    padding: 40px;
+  }
+   .row_wepromise
+  {
+    padding: 10px;
+  }
+  .row_wepromise_rowcard
+  {
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .row_wepromise_card
+  {
+    padding: 10px;
+  }
+  .row_button
+  {
+    padding: 10px 20px;
+  }
+
+  .row_mobile_footer
+  {
+    display: none;
+  }
+
+  .row_comingsoon_div_btn_mobile
+  {
+    display: none;
+  }
+
+}
+
+
+
+ 
+
+    
+@media screen and (min-width: 576px)
+{
+.navbar-expand-sm {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+ 
+@media screen and (min-width: 1030px) and (max-width: 2000px)
+{
+  .row_mobile_footer
+  {
+    display: none;
+  }
+  .cart_mobile
+   {
+     display: none;
+   }
+   .nav-item-mobile
+   {
+     display: none;
+   }
+   .row_comingsoon_div_btn_mobile
+   {
+    display: none;
+   }
+
+}
+
+</style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-sm shadow navbar-light " id="home">
+  <div class="container Navbar_container">
+        
+    <button class="navbar-toggler humburg-button" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar " aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+    <span><i style=" color: #FFFFFF; "class="fa fa-bars"></i></span>
+    </button>
+
+     <div>
+       <a class="nav-link navbar_logo" href="#">Laiba Mustafa</a>
+     </div>
+
+      <div class="collapse navbar-collapse navbar_collapse_style" id="n_bar">
+        <ul class="navbar-nav ">
+          <li class="nav-item mr-sm-3"><a class="nav-link navbar_font" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link navbar_font" href="contact.html">Experience</a></li> 
+          <li class="nav-item"><a class="nav-link navbar_font"href="#skills-slider">Skills</a></li>
+          <li class="nav-item"><a class="nav-link navbar_font"href="#portfolio">Portfolio</a></li> 
+          <li class="nav-item"><a class="nav-link navbar_font" href="#Blogs" href="#">Blog</a></li> 
+          <li class="nav-item"><a class="nav-link navbar_font" href="#">Contact me</a></li>
+        </ul>
+     </div>
+   </div>
+ </nav>
+
+ <div class="container-fluid countainer-hero">
+   <div class="row  row_hero_section row_mobile-order">
+
+     <div class="col-12 col-sm-6 col-md-6 col-lg-6">  
+        <div class="row_HeroCol_one_padding">
+          <img class="row_ColHero_dot_svg " alt="" src="https://svgsilh.com/svg/26432.svg">
+          <h2 class="heroCol_one_h2"> HELLO!! <span class="wave-emoji"><img alt="👋" draggable="false" src=" https:cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"></span>
+          <br><span class="font_color">This is Laiba Mustafa</span><br> <span class="font_line3">I am <span id="changing-word"> </span> </span></h2>
+      </div>
+      <div class="row_HeroCol_one_padding hero_icon_row"> 
+       <a href="https://www.linkedin.com/in/laiba-mustfa-793160240" class="header-icon-style"><span ><img class=" linkedin-logo"src=" icons8-linkedin-64 .png" ></span></a> 
+       <a href="https://github.com/LaibaMustfa" class="  header-icon-style"><span ><img class=" linkedin-logo"src=" icons8-github-64.png" ></span></a> </a> 
+       <a href="https://www.instagram.com/songheartofficial/" class="f header-icon-style"><span ><img class=" linkedin-logo"src=" icons8-instagram-64.png" ></span></a> </a> 
+       <a href="mailto:laibamustafa563@gmail.com" class="  header-icon-style"><span ><img class=" linkedin-logo"src=" icons8-gmail-64 (2).png" ></span></a> </a> 
+      </div>
+   </div> 
+
+      <div class="col-12  col-sm-6 col-md-6 col-lg-6">
+        <div class="text-center" >  
+          <img class="row_HeroCol_floating-image row_HeroCol_floating-image_style "  src="Hand coding-rafiki (2).svg" alt="image">
+        </div>
+      </div>
+
+  </div> 
+ </div>
+
+ <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <h3 class="row_serives_h3">SERVICES</h3>   
+    </div>    
+ </div>
+
+ <div class="container-fluid container-card">
+   <!-- row 1-->
+  <div class="row row_cards ">
+
+      <!-- card 1 -->
+    <div class="col-12 col-6 col-sm-6 col-md-6 col-lg-6 serivce_col_padding">
+      <div class="row_card">
+         <div class="card-header">
+             <img class="card-icon" src="icons8-power-bi-2021.svg" alt="laptop">
+         </div>
+         <div class="row_card_font">
+              <h2 class="row_card_h2">Power BI</h2>
+              <p class="row_card_p">Visualizing data with interactive dashboards and reports.providing dynamic visualizations that enable users to explore trends, uncover insights, and make informed decisions in real-time.</p>
+         </div>
+         <div class="tags", style="padding-bottom: 3px">
+              <span class="tag">Power BI Desktop</span>
+          
+              <span class="tag">Power Query</span>
+              <span class="tag">Data Modeling</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">SQL</span>
+              <span class="tag">DAX</span>
+        </div>
+       <!-- <a id="bottom" class="row_card_buynow_btn" href="">Buy Now &#8594;</a> -->
+      </div>
+    </div>
+
+     <!-- card 2-->
+     <div class="col-12 col-6 col-sm-6 col-md-6 col-lg-6 serivce_col_padding">
+       <div class="row_card">
+          <div class="card-header">
+             <img class="card-icon" src="webdevelopment.svg" alt="laptop">
+             <h2 class="row_card_h2">Frontend Development</h2>
+          </div>
+          <div class="row_card_font">
+              <p class="row_card_p">Designing and building responsive, user-friendly websites with cutting-edge front-end technologies and frameworks, ensuring seamless performance across all devices.</p>
+          </div>
+          <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Boostrap</span>
+              <span class="tag">Javascript</span>
+              <span class="tag">React</span>
+              <span class="tag">Tailwind-css</span>
+          </div>
+         <!-- <a id="bottom" class="row_card_buynow_btn" href="">Buy Now &#8594;</a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- row 1-->
+    <div class="row row_cards ">
+        <!-- card 1 -->
+      <div class="col-12 col-6 col-sm-6 col-md-6 col-lg-6 serivce_col_padding",>
+         <div class="row_card">
+          <div class="card-header">
+             <img class="card-icon" src="wordpress.svg" alt="laptop">
+          </div>
+          <div class="row_card_font">
+              <h2 class="row_card_h2">WordPress</h2>
+              <p class="row_card_p">Building dynamic and responsive websites with WordPress, tailored for content management and performance.</p>
+          </div>
+          <div class="tags", style="padding-bottom: 10px">
+              <span class="tag">WordPress</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">WooCommerce</span>
+              <span class="tag">SEO Optimization</span>
+              <span class="tag">Custom Themes</span>
+          </div>
+          <!-- <a id="bottom" class="row_card_buynow_btn" href="">Buy Now &#8594;</a> -->
+         </div>
+      </div>
+
+
+     <!-- card 4 -->
+    <div class="col-12 col-6 col-sm-6 col-md-6 col-lg-6 serivce_col_padding", style="padding-bottom: 0px;">
+      <div class="row_card">
+         <div class="card-header">
+             <img class="card-icon" src=" ecommerence.svg" alt="laptop">
+         </div>
+         <div class="row_card_font">
+              <h2 class="row_card_h2">Ecommerence Development</h2>
+              <p class="row_card_p">Creating engaging online stores with robust Ecommerce platforms to help businesses sell online.Focused on delivering seamless user experiences, secure transactions, and optimized product displays, enabling businesses.</p>
+         </div>
+         <div class="tags">
+               <span class="tag">Shopify</span>
+               <span class="tag">WooCommerce</span>
+               <span class="tag">WPForms</span>
+               <span class="tag">Elementor</span>
+             
+
+         </div>
+         <!-- <a id="bottom" class="row_card_buynow_btn" href="">Buy Now &#8594;</a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+ <!-- Potfolio section-->
+<div class="portfolio-section" id= "portfolio">
+  <h2 class="heading">Portfolio</h2>
+  <div class="categories">
+    <div class=" list" bis_skin_checked="1">
+      <button class="category active"data-category="all" bis_skin_checked="1">All</button>
+      <button class="category" data-category="Frontend" bis_skin_checked="1">Frontend</button>
+      <button class="category" data-category="Wordpress" bis_skin_checked="1">Wordpress</button>
+      <button class="category" data-category="Ecommerence" bis_skin_checked="1">Ecommerence</button>
+      <button class="category" data-category="Power Bi" bis_skin_checked="1">Power Bi</button>
+   </div>
+  </div>
+  
+  <div class="projects">
+    <div class="project" data-category="Frontend">
+      <img src="airdrop.png " alt="Frontend Project 1">
+      <div class="overlay">
+        <div class="project_left">  
+           <h2 class= "protfoliosection_project_h2">Airdrop(Ecommerence website) </h2>  
+           <h3 class= "protfoliosection_project_h3">Home page design by HTML, Bootstrap, JavaScript</h3>
+        </div>
+        <div class="project_right"> 
+          <a href="https://laibamustfa.github.io/Airdrop-/ " target="_blank"> Visit Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" data-category="Frontend">
+      <img src="songheart.png " alt="Frontend Project 2">
+      <div class="overlay">
+        <div class="project_left">  
+           <h2 class= "protfoliosection_project_h2">Songheart(custom gift site) </h2>  
+           <h3 class= "protfoliosection_project_h3">Home page design by HTML, Bootstrap, JavaScript</h3>
+        </div>
+        <div class="project_right"> 
+           <a href="https://laibamustfa.github.io/SongHeart/" target="_blank">Visit Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" data-category="Wordpress">
+      <img src="onebyzone.png" alt="Wordpress Project 1">
+      <div class="overlay">
+        <div class="project_left">  
+           <h2 class= "protfoliosection_project_h2">OnebyZone(Ecommerence site) </h2>  
+           <h3 class= "protfoliosection_project_h3">Elementor,WooCommerce,WP eCommerce </h3>
+        </div>
+        <div class="project_right"> 
+           <a href="https://onebuyzone.com/" target="_blank">Visit Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" data-category="Ecommerence">
+      <img src="Ecommerence-onebyzone.png" alt="Ecommerence Project 1">
+      <div class="overlay">
+        <div class="project_left">  
+           <h2 class= "protfoliosection_project_h2">OnebyZone(Ecommerence site) </h2>  
+           <h3 class= "protfoliosection_project_h3"> </h3>
+        </div>
+        <div class="project_right"> 
+           <a href="https://onebuyzone.com/" target="_blank">Visit Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" data-category="Ecommerence">
+      <img src="Ecommerence_Airdrop.png" alt="Ecommerence Project 2">
+      <div class="overlay">
+        <div class="project_left">  
+           <h2 class= "protfoliosection_project_h2">Airdrop(Ecommerence site) </h2>  
+           <h3 class= "protfoliosection_project_h3"> </h3>
+        </div>
+        <div class="project_right"> 
+           <a href="https://airdropja.com/" target="_blank">Visit Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" data-category="Power Bi">
+      <img src="your-image4.jpg" alt="Power Bi Project 1">
+      <div class="overlay">
+        <div class="project_left">  
+           <h2 class= "protfoliosection_project_h2">  </h2>  
+           <h3 class= "protfoliosection_project_h3"> </h3>
+        </div>
+        <div class="project_right"> 
+           <a href="https://example.com" target="_blank">Visit Project</a>
+        </div>
+      </div>
+    </div>
+    <!-- Add more projects as needed with different data-category values -->
+  </div>
+</div>
+
+ <!-- Add more projects as needed -->
+
+<!-- Certification -->
+<div class="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-container">
+        
+        <!-- Certification Card 1 -->
+        <a href=" " target="_blank" class="cert-card" style="background-color: #608CB7;">
+            <img  src="IBM.png" alt="Certificate Image">
+            <div class="cert-overlay">View Certificate</div>
+            <div class="cert-info">
+                <h3 class="cert-title">Data Science</h3>
+                <h4 class="cert-subtitle">Coursera</h4>
+            </div>
+        </a>
+        
+        <!-- Certification Card 2 -->
+        <a href="https://www.coursera.org/account/accomplishments/verify/another_certificate_id" target="_blank" class="cert-card" style="background-color : #F8D466">
+            <img src=" UCDavis.jpg" alt="Certificate Image">
+            <div class="cert-overlay">View Certificate</div>
+            <div class="cert-info">
+                <h3 class="cert-title">Website Development</h3>
+                <h4 class="cert-subtitle">University of California, Davis</h4>
+            </div>
+        </a>
+        
+        <!-- Certification Card 3  
+        <a href="https://www.qwiklabs.com/public_profiles/some_certificate_id" target="_blank" class="cert-card">
+            <img src="https://via.placeholder.com/200x120" alt="Certificate Image">
+            <div class="cert-overlay">View Certificate</div>
+            <div class="cert-info">
+                <h3 class="cert-title">ML on GCP</h3>
+                <h4 class="cert-subtitle">- GCP Training</h4>
+            </div>
+        </a> -->
+        
+        <!-- Add more certification cards as needed -->
+        
+ </div>  
+
+
+<!-- Skillas-->
+ <div class="skills-slider" id="skills-slider">
+      <h2 class="skills-title">Skills</h2>
+      
+        <div class="slider">
+            <div class="slide"><img src=" HTML.png" alt="JavaScript"><p> HTML</p></div>
+            <div class="slide"><img src=" CSS.png" alt="TypeScript"><p>CSS</p></div>
+            <div class="slide"><img src="JAVASCRIPT.png" alt="React"><p>Javascript</p></div>
+            <div class="slide"><img src="REACT.svg" alt="Next JS"><p>React</p></div>
+            <div class="slide"><img src=" POWERQUERY.png" alt="Tailwind"><p>PowerQuery</p></div>
+            <div class="slide"><img src=" SQL (2).png" alt="MongoDB"><p>SQL</p></div>
+            <div class="slide"><img src=" TABLUAE.png" alt="MySQL"><p>Tableau</p></div>
+            <div class="slide"><img src=" icons8-power-bi-2021.SVG" alt="JavaScript"><p>Power BI</p></div>
+            <div class="slide"><img src=" wordpress.svg" alt="TypeScript"><p>WordPress</p></div>
+            <div class="slide"><img src="datavisualization.png" alt="React"><p>Data Visualization</p></div> 
+        </div>
+</div>
+
+<section class="blog-section" id="Blogs">
+        <h2 class="section-title">Blogs</h2>
+        <p class="coming-soon">Blogs are coming soon! Stay tuned for updates.</p>
+        <div class="blog-cards">
+
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <img src="download.jpg" alt="GitHub and EC2 manual deployment" class="blog-image">
+                <div class="blog-content">
+                   <!-- <p class="blog-date">5 months ago</p> -->
+                    <p class="blog-title">New Content Coming Soon</p>
+                    <p class="blog-time">2 Min Read</p>
+                    <p class="blog-description">We're working on bringing valuable blog posts to you soon....</p>
+                    <div class="blog-icons">
+                        <span>❤️ 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <img src="blogg.jpg" alt="GitHub developer portfolio" class="blog-image">
+                <div class="blog-content">
+                    <!-- <p class="blog-date">5 months ago</p> -->
+                    <p class="blog-title">New Content Coming Soon</p>
+                    <p class="blog-time">2 Min Read</p>
+                    <p class="blog-description">We're working on bringing valuable blog posts to you soon.</p>
+                    <div class="blog-icons">
+                        <span>❤️ 0</span>
+                        <span>💬 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <img src="comingsoon.png" alt="Scope in JavaScript" class="blog-image">
+                <div class="blog-content">
+                   <!-- <p class="blog-date">5 months ago</p> -->
+                    <p class="blog-title">New Content Coming Soon.</p>
+                    <p class="blog-time">2 Min Read</p>
+                    <p class="blog-description">We're working on bringing valuable blog posts to you soon....</p>
+                    <div class="blog-icons">
+                        <span>❤️ 0</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer bg-dark text-center text-light py-5">
+    <div class="container">
+
+       <button class="scroll-button" onclick="topFunction()" id="myBtn">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+         </svg>
+       </button>
+       <!-- Header Text -->
+       <h2 class="display-5">Keep In Touch.</h2>
+        
+        <!-- Subtext -->
+        <p class="lead mt-3">
+            I'm currently specializing in <span class="text-success font-weight-bold">Front-end Development</span>.
+            <br>
+            Feel free to get in touch and talk more about your projects.
+        </p>
+
+        <!-- Social Links -->
+        <div class="d-flex justify-content-center mt-4">
+            <a href= "https:www.linkedin.com/in/laiba-mustfa-793160240" class="btn btn-outline-light footer-btn-style mx-2" target="_blank">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:laibamustafa563@gmail.com" class="btn btn-outline-light footer-btn-style mx-2">
+                <i class="bi bi-envelope-fill"></i> Email
+            </a>
+            <a href="your-resume-link.pdf" class="btn btn-outline-light footer-btn-style mx-2" target="_blank">
+                <i class="bi bi-file-earmark-text"></i> Resume
+            </a>
+        </div>
+
+        <!-- Footer Credits -->
+        <p class="mt-5 small text-muted">
+            Designed and Developed Laiba Mustafa.<br>
+            Built with <span class="text-success">Boostrap,Javascript, React</span> & <span class="text-success"> HTML</span>. Hosted on <span class="text-success">GitHub</span>.
+        </p>
+    </div>
+</footer>
+     
+</div>
+        
+ <!--=============== alert JS ===============-->
+<script>
+    function myAlertMath() {
+    var userNumber = document.getElementById("mathInput").value;
+    alert("your number x 5 is" + userNumber * 5)
+        }
+</script>
+       
+ <!--=============== SWIPER JS ===============-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+  
+<!--=============== On click text ===============-->
+ <script type="text/javascript">
+        function addParagraphText() {
+            document.getElementById("para").innerHTML = "THANK YOU";
+        }
+</script>
+
+<!--=============== display input ===============-->
+<script type="text/javascript">
+    function displayInput() {
+        var testInput = document.getElementById("name").value;
+        if (testInput.length == 0) {
+            document.getElementById("paraa").innerHTML = "Please enter text.";
+        } else {
+            document.getElementById("paraa").innerHTML = testInput;
+            document.getElementById("paraa").style.color = testInput;
+        }
+    }
+</script>
+
+<!--=============== top JS ===============-->
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<script> 
+// Define an array of words to cycle through
+const words = ["a Software Engineer", "a Website Developer", "a Designer", "a Creator"];
+let index = 0;
+
+// Get the element where the word will change
+const changingWord = document.getElementById("changing-word");
+
+// Function to change the word
+function changeWord() {
+    // Update the text content of the changing word
+    changingWord.textContent = words[index];
+    
+    // Increment index to cycle through words, reset if at the end of the array
+    index = (index + 1) % words.length;
+}
+
+// Initial call to set the first word
+changeWord();
+
+// Call changeWord function every 1 second (1000 milliseconds)
+setInterval(changeWord, 1500);
+</script>
+ 
+
+<script type="text/javascript">
+ document.querySelectorAll('.category').forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active class from all buttons and add to the clicked one
+    document.querySelector('.category.active').classList.remove('active');
+    button.classList.add('active');
+    
+    // Get the selected category
+    const category = button.getAttribute('data-category');
+    
+    // Show/hide projects based on the selected category
+    document.querySelectorAll('.project').forEach(project => {
+      if (category === 'all' || project.getAttribute('data-category') === category) {
+        project.style.display = 'block'; // Show project
+      } else {
+        project.style.display = 'none'; // Hide project
+      }
+    });
+  });
+});
+
+// Initial display of all projects (for "All" category)
+document.querySelectorAll('.project').forEach(project => {
+  project.style.display = 'block';
+});
+</script>
+
+<script>
+  const slider = document.querySelector('.slider');
+
+let isScrolling = true;
+
+function autoScroll() {
+    if (isScrolling) {
+        slider.scrollBy(1, 0);
+        if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+            slider.scrollLeft = 0;
+        }
+    }
+}
+
+setInterval(autoScroll, 30);
+
+// Pause scrolling on hover
+slider.addEventListener('mouseover', () => isScrolling = false);
+slider.addEventListener('mouseout', () => isScrolling = true);
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.getElementById("n_bar");
+
+    // Close navbar when a nav link is clicked
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (navbarCollapse.classList.contains("show")) {
+          navbarToggler.click(); // Programmatically trigger click to close the menu
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+ 
+</body>
+</html>
